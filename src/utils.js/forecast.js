@@ -17,7 +17,7 @@ request({
         callback('please provide correct input', undefined)
     } else {
         callback(undefined,
-                body.daily.data[0].summary + 'It is currently ' + body.currently.temperature + ' degrees out. ' + 'There is ' + body.currently.precipProbability + ' % chance of rain')
+                body.daily.data[0].summary + 'It is currently ' + body.currently.temperature + ' degrees out. Wind speed is ' + body.currently.windSpeed + 'There is ' + body.currently.precipProbability + ' % chance of rain')
          }
 
         })
